@@ -1,0 +1,36 @@
+input {
+	width: 3em;
+}
+
+td {
+	text-align: center;
+}
+
+input {
+	border-image: url(border.png) 30 round;
+	text-align: center;
+}
+
+table {
+	text-align: center;
+	display: inline-block;
+}
+
+legend {
+	font-size: 3em;
+	text-align: center;
+	display: inline-block;
+}
+
+fieldset {
+	width: 25em;
+	border-radius: 5em;
+	display: inline-block;
+	background-color: white;
+}
+
+body {
+	background-image: url(soccer.jpg);
+	background-size: cover;
+	text-align: center;
+}

@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CIS 255</title>
-  </head>
-  <body>
-    <form>
-      <table>
-        <td>
-          <p>First Point: </p>
-          <input type="radio" name="Contestant 1" value=
-  </body>
+	<head>
+		<title>CIS 255 - Prog03</title>
+		<link rel="stylesheet" type="text/css" href="prog03.css">	
+	</head>
+	<body>
+		<form oninput="team1final.value=parseInt(team1half1.value)+parseInt(team1half2.value);team2final.value=parseInt(team2half1.value)+parseInt(team2half2.value)">
+			<fieldset>
+				<legend>Soccer Scorecard</legend>
+				<table>
+					<tr>
+						<td>
+						</td>
+						<td>
+							<h2>Team 1</h2>
+						</td>
+						<td>
+							<h2>Team 2</h2>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3>First Half</h3>
+						</td>
+						<td>
+							<input type="number" name="t1score" id="team1half1" value="0">
+						</td>
+						<td>
+							<input type="number" name="t2score" id="team2half1" value="0">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3>Second Half</h3>
+						</td>
+						<td>
+							<input type="number" name="t1score" id="team1half2" value="0">
+						</td>
+						<td>
+							<input type="number" name="t2score" id="team2half2" value="0">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3>Final Score</h3>
+						</td>
+						<td>
+							<output name="team1final" for="team1half1 team1half2">0</output>
+						</td>
+						<td>
+							<output name="team2final" for="team2half1 team2half2">0</output>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
 </html>
